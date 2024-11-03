@@ -67,7 +67,7 @@ app.MapDelete("/kanji/{kanji_id}", Results<BadRequest, Ok> (int kanji_id) =>
     return TypedResults.BadRequest();
 });
 
-app.Urls.Add("http://*:30000");
+//app.Urls.Add("http://localhost:30000");
 app.Run();
-
+public partial class Program { }
 internal record Kanji(int id, string literal, int jlpt_level, string ja_on, string ja_kun, string meaning);
