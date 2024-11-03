@@ -57,7 +57,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Deploying the application
-        uses: D3rHase/ssh-command-action@v0.2.2
+        uses: appleboy/ssh-action@v1.1.0
         with:
           host: ${{secrets.SSH_HOST}}
           username: ${{secrets.SSH_USER}}
