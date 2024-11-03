@@ -61,7 +61,7 @@ jobs:
         with:
           host: ${{secrets.SSH_HOST}}
           username: ${{secrets.SSH_USER}}
-          private_key: ${{secrets.SSH_PRIVATE_KEY}}
+          password: ${{secrets.SSH_PRIVATE_KEY}}
           
           run: |
             echo Deploying the application
